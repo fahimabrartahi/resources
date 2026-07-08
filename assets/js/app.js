@@ -1,4 +1,4 @@
-
+/* Routing + rendering. Reads from SITE_DATA (assets/js/data.js). */
 
 const root = document.getElementById("view-root");
 const crumbEl = document.getElementById("breadcrumb");
@@ -30,6 +30,7 @@ function findCourse(kind, termSlug, courseSlug) {
 }
 
 function setBreadcrumb(parts) {
+  // parts: [{label, href}] last item is current page (no href)
   crumbEl.innerHTML = parts
     .map((p, i) => {
       if (i === parts.length - 1) {
@@ -61,14 +62,15 @@ function emptyState(message) {
   return `<div class="empty-state"><p>${esc(message)}</p></div>`;
 }
 
+/* ---------- Views ---------- */
 
 function renderHome() {
   setBreadcrumb([{ label: "Home" }]);
   root.innerHTML = `
     <section class="hero">
-      <p class="hero-eyebrow">Class Resource</p>
-      <h1 class="hero-title">Find any lecture or textbook easily.</h1>
-      <p class="hero-lede">Everything the class has shared — organized by term and course — kept in one place so no one has to dig through chats again.</p>
+      <p class="hero-eyebrow">Class Resource Catalog</p>
+      <h1 class="hero-title">Find any lecture or textbook in three clicks.</h1>
+      <p class="hero-lede">Everything the class has shared — organized by term and course — kept in one place so no one has to dig through chat threads again.</p>
     </section>
     <div class="tile-grid tile-grid--main">
       ${card("#/lectures", "Lecture Sheets", "Slides & notes, by term and course", "lecture")}
@@ -206,21 +208,60 @@ function renderBooks(termSlug, courseSlug) {
   }
 
   const rows = course.books
-    .map(
-      (b, i) => `
-        <li class="catalog-row">
-          <span class="catalog-tab catalog-tab--book">${String(i + 1).padStart(2, "0")}</span>
+    .map((b, i) => {
+      const tab = `<span class="catalog-tab catalog-tab--book">${String(i + 1).padStart(2, "0")}</span>`;
+      const heading = `
+        <span class="catalog-title">${esc(b.title)}</span>
+        <span class="catalog-date">${esc(b.author)}</span>`;
+
+      const hasChapters = Array.isArray(b.chapters) && b.chapters.length > 0;
+
+      if (!hasChapters) {
+        // Simple book, single link — same as before.
+        return `
+          <li class="catalog-row">
+            ${tab}
+            <div class="catalog-body">
+              <div class="catalog-heading">${heading}</div>
+              <div class="catalog-actions">
+                <a class="pill pill--slide" href="${b.file}" target="_blank" rel="noopener">${linkLabel("Open Book", b.file)}</a>
+              </div>
+            </div>
+          </li>`;
+      }
+
+      // Book split into chapters — render as an expandable list.
+      const fullBookPill = b.file
+        ? `<a class="pill pill--slide" href="${b.file}" target="_blank" rel="noopener">${linkLabel("Full Book", b.file)}</a>`
+        : "";
+
+      const chapterRows = [...b.chapters]
+        .sort((x, y) => x.number - y.number)
+        .map(
+          ch => `
+            <li class="chapter-row">
+              <span class="chapter-number">${String(ch.number).padStart(2, "0")}</span>
+              <span class="chapter-title">${esc(ch.title)}</span>
+              <a class="pill pill--notes pill--chapter" href="${ch.file}" target="_blank" rel="noopener">${linkLabel("Open", ch.file)}</a>
+            </li>`
+        )
+        .join("");
+
+      return `
+        <li class="catalog-row catalog-row--book">
+          ${tab}
           <div class="catalog-body">
-            <div class="catalog-heading">
-              <span class="catalog-title">${esc(b.title)}</span>
-              <span class="catalog-date">${esc(b.author)}</span>
-            </div>
-            <div class="catalog-actions">
-              <a class="pill pill--slide" href="${b.file}" target="_blank" rel="noopener">${linkLabel("Open Book", b.file)}</a>
-            </div>
+            <details class="chapter-details">
+              <summary>
+                <span class="catalog-heading">${heading}</span>
+                <span class="chapter-toggle"><span class="chevron"></span> ${b.chapters.length} chapters</span>
+              </summary>
+              ${fullBookPill ? `<div class="catalog-actions catalog-actions--full">${fullBookPill}</div>` : ""}
+              <ul class="chapter-list">${chapterRows}</ul>
+            </details>
           </div>
-        </li>`
-    )
+        </li>`;
+    })
     .join("");
 
   root.innerHTML = `
@@ -234,6 +275,7 @@ function render404() {
   root.innerHTML = emptyState("That page doesn't exist.");
 }
 
+/* ---------- Router ---------- */
 
 function route() {
   const hash = location.hash.replace(/^#\/?/, "");
@@ -254,7 +296,7 @@ function route() {
 
 window.addEventListener("hashchange", route);
 window.addEventListener("DOMContentLoaded", () => {
-  document.getElementById("contact-link").href = `mailto:${CONTACT_EMAIL}?subject=Class%20Resources%20webapp%20feedback`;
+  document.getElementById("contact-link").href = `mailto:${CONTACT_EMAIL}?subject=Lecture%20Hub%20feedback`;
   document.getElementById("year").textContent = new Date().getFullYear();
   route();
 });
