@@ -254,7 +254,7 @@ function route() {
 
 window.addEventListener("hashchange", route);
 window.addEventListener("DOMContentLoaded", () => {
-  document.getElementById("contact-link").href = `mailto:${CONTACT_EMAIL}?subject=Resources%20webapp%20feedback`;
+  document.getElementById("contact-link").href = `mailto:${CONTACT_EMAIL}?subject=Class%20Resources%20webapp%20feedback`;
   document.getElementById("year").textContent = new Date().getFullYear();
   route();
 });
