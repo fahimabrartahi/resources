@@ -44,7 +44,17 @@ const SITE_DATA = {
         { name: "Chemistry Sessional", slug: "chem132", code: "Chem132", books: [] },
         { name: "Thermal Engineering Sessional", slug: "me112", code: "ME112", books: [] },
         { name: "Welding and Foundry", slug: "me152", code: "ME152", books: [] },
-        { name: "Mechanical Drawing and AutoCAD", slug: "me172", code: "ME172", books: [] }
+        { name: "Mechanical Drawing and AutoCAD", slug: "me172", code: "ME172", books: [
+          {
+            title: "Mechanical Engineering Drawing",
+            author: "Dr. A. C. Mandal & Dr. Md. Q. Islam",
+            chapters: [
+              { number: 1, title: "Basic Elements of Mechanical Engineering", file: "https://drive.google.com/file/d/1zCCPt5a22etAl5ZeyLsXwxWBQ--0LRcv/view?usp=sharing" }
+              { number: 2, title: "Dimensioning", file: "https://drive.google.com/file/d/1wDs-DDIh6H-UhusxebywegwzcDI0WH5R/view?usp=sharing" }
+              { number: 3, title: "Dimensioning", file: "https://drive.google.com/file/d/151e-2IvYYZyXJMFNbk9IPOtQ4CdecTM_/view?usp=sharing" }
+            ]
+          }
+        ] }
       ]
     }
   ]
