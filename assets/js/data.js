@@ -5,7 +5,20 @@ const SITE_DATA = {
       term: "Term 1",
       termSlug: "term-1",
       courses: [
-        { name: "Physics-I", slug: "phy131", code: "Phy131", credit: 3.00, type: "theory", lectures: [] },
+        { name: "Physics-I", slug: "phy131", code: "Phy131", credit: 3.00, type: "theory", lectures: [
+          {
+            number: 0,                        
+            date: "2026-07-07",                
+            title: "Phy-131 course plan",
+            slide: "https://drive.google.com/file/d/1-gyM73By3wZ5PYuh_ysm5dnUP8dANuXo/view?usp=sharing"
+          },
+          {
+            number: 1,                        
+            date: "2026-07-06",                
+            title: "Introduction",
+            slide: ""
+          }
+        ] },
         { name: "Chemistry", slug: "chem131", code: "Chem131", credit: 3.00, type: "theory", lectures: [] },
         { name: "Calculus and Geometry", slug: "math131", code: "Math131", credit: 4.00, type: "theory", lectures: [] },
         { name: "Sociology and Industrial Psychology", slug: "hum131", code: "Hum131", credit: 3.00, type: "theory", lectures: [
@@ -22,7 +35,20 @@ const SITE_DATA = {
             slide: "https://drive.google.com/file/d/1Nk37lbxDkrwkyYY9QYSOyXQn1CpIHsBx/view?usp=sharing"
           }
         ] },
-        { name: "Thermal Engineering", slug: "me111", code: "ME111", credit: 3.00, type: "theory", lectures: [] },
+        { name: "Thermal Engineering", slug: "me111", code: "ME111", credit: 3.00, type: "theory", lectures: [
+          {
+            number: 1,                        
+            date: "2026-07-06",                
+            title: "Introduction",
+            slide: "https://drive.google.com/file/d/14pdvEh2YRrGhKO_TWXnUM1cq_5syiDsu/view?usp=sharing"
+          },
+          {
+            number: 2,                        
+            date: "2026-07-07",                
+            title: "",
+            slide: ""
+          }
+        ] },
         { name: "Chemistry Sessional", slug: "chem132", code: "Chem132", credit: 1.50, type: "sessional", lectures: [] },
         { name: "Thermal Engineering Sessional", slug: "me112", code: "ME112", credit: 0.75, type: "sessional", lectures: [] },
         { name: "Welding and Foundry", slug: "me152", code: "ME152", credit: 0.75, type: "sessional", lectures: [] },
@@ -38,7 +64,21 @@ const SITE_DATA = {
       courses: [
         { name: "Physics-I", slug: "phy131", code: "Phy131", books: [] },
         { name: "Chemistry", slug: "chem131", code: "Chem131", books: [] },
-        { name: "Calculus and Geometry", slug: "math131", code: "Math131", books: [] },
+        { name: "Calculus and Geometry", slug: "math131", code: "Math131", books: [
+          {
+            title: "Differencial Calculus",
+            author: "Muhammad and Bhattacharjee",
+            file: "https://drive.google.com/drive/folders/1xHBVRlYIgd6WB6sykM1uAdjDNgbZW1zx?usp=sharing",
+            chapters: [
+              { number: 1, title: "Introductory pages", file: "https://drive.google.com/file/d/1JV6RVhSSdWc22GfgN2MyUpbNmceuBEvA/view?usp=sharing" },
+              { number: 2, title: "Chapter 01-04", file: "https://drive.google.com/file/d/1LDjIacExmuI13i3h4ngRMdddutXw3V5X/view?usp=sharing" },
+              { number: 3, title: "Chapter 05-08", file: "https://drive.google.com/file/d/1CdPT15WrEYqMWtWBubiS5i7_z4aVwJes/view?usp=sharing" },
+              { number: 4, title: "Chapter 09-12", file: "https://drive.google.com/file/d/1HkBu5tMaYlV4qxg0NvHcb_wYwM7Hdtb-/view?usp=sharing" },
+              { number: 5, title: "Chapter 13-16", file: "https://drive.google.com/file/d/1FMuM6No6FI15w7o55EE3BHgQXXb8XQZI/view?usp=sharing" },
+              { number: 6, title: "Questions", file: "https://drive.google.com/file/d/14v-eOwZRu6pBU0H_jqhNHDqi1qzbRDd-/view?usp=sharing" }
+            ]
+          }
+        ] },
         { name: "Sociology and Industrial Psychology", slug: "hum131", code: "Hum131", books: [] },
         { name: "Thermal Engineering", slug: "me111", code: "ME111", books: [] },
         { name: "Chemistry Sessional", slug: "chem132", code: "Chem132", books: [] },
