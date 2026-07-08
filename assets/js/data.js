@@ -49,8 +49,8 @@ const SITE_DATA = {
             title: "Mechanical Engineering Drawing",
             author: "Dr. A. C. Mandal & Dr. Md. Q. Islam",
             chapters: [
-              { number: 1, title: "Basic Elements of Mechanical Engineering", file: "https://drive.google.com/file/d/1zCCPt5a22etAl5ZeyLsXwxWBQ--0LRcv/view?usp=sharing" }
-              { number: 2, title: "Dimensioning", file: "https://drive.google.com/file/d/1wDs-DDIh6H-UhusxebywegwzcDI0WH5R/view?usp=sharing" }
+              { number: 1, title: "Basic Elements of Mechanical Engineering", file: "https://drive.google.com/file/d/1zCCPt5a22etAl5ZeyLsXwxWBQ--0LRcv/view?usp=sharing" },
+              { number: 2, title: "Dimensioning", file: "https://drive.google.com/file/d/1wDs-DDIh6H-UhusxebywegwzcDI0WH5R/view?usp=sharing" },
               { number: 3, title: "Dimensioning", file: "https://drive.google.com/file/d/151e-2IvYYZyXJMFNbk9IPOtQ4CdecTM_/view?usp=sharing" }
             ]
           }
