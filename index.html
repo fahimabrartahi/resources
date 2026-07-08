@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Class Resource Catalog</title>
+<meta name="description" content="Lecture slides, notes, and reference books for the class, organized by term and course.">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:wght@500;600&family=Source+Sans+3:wght@400;600&family=IBM+Plex+Mono:wght@500;600&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+
+<header class="site-header">
+  <div class="site-header-inner">
+    <a class="brand" href="#/"><span class="brand-mark" aria-hidden="true"></span>Class Resource</a>
+    <span class="header-tag">Slides &middot; Notes &middot; Books</span>
+  </div>
+</header>
+
+<main>
+  <nav class="breadcrumb" id="breadcrumb" aria-label="Breadcrumb"></nav>
+  <div id="view-root"></div>
+</main>
+
+<footer class="site-footer">
+  <div class="site-footer-inner">
+    <span>&copy; <span id="year"></span> &mdash; maintained for classmates, by a classmate.<br>  Made with the help of AI tools</span>
+    <a id="contact-link" class="footer-contact" href="#">Report an issue or suggest a resource</a>
+  </div>
+</footer>
+
+<script src="assets/js/data.js"></script>
+<script src="assets/js/app.js"></script>
+</body>
+</html>
