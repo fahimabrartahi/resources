@@ -33,6 +33,12 @@ const SITE_DATA = {
             date: "2026-07-06",                
             title: "Introduction to Psychology",
             slide: "https://drive.google.com/file/d/1Nk37lbxDkrwkyYY9QYSOyXQn1CpIHsBx/view?usp=sharing"
+          },
+          {
+            number: 3,                        
+            date: "2026-07-12",                
+            title: "Perception",
+            slide: "https://drive.google.com/file/d/1PLuIbd3mcjNNjaWa3tVxm3WdSjm_p6KN/view?usp=sharing"
           }
         ] },
         { name: "Thermal Engineering", slug: "me111", code: "ME111", credit: 3.00, type: "theory", lectures: [
@@ -79,7 +85,13 @@ const SITE_DATA = {
             ]
           }
         ] },
-        { name: "Sociology and Industrial Psychology", slug: "hum131", code: "Hum131", books: [] },
+        { name: "Sociology and Industrial Psychology", slug: "hum131", code: "Hum131", books: [
+          {
+            title: "Organizational Behavior",
+            author: "Stephen P. Robbins & Timothy A. Judge",
+            file: "https://drive.google.com/file/d/1lJDILHk9oRj9tNRz0GOVXJQSczeUdgYU/view?usp=drive_link"
+          }
+        ] },
         { name: "Thermal Engineering", slug: "me111", code: "ME111", books: [] },
         { name: "Chemistry Sessional", slug: "chem132", code: "Chem132", books: [] },
         { name: "Thermal Engineering Sessional", slug: "me112", code: "ME112", books: [] },
