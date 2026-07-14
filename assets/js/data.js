@@ -39,6 +39,12 @@ const SITE_DATA = {
             date: "2026-07-12",                
             title: "Perception",
             slide: "https://drive.google.com/file/d/1PLuIbd3mcjNNjaWa3tVxm3WdSjm_p6KN/view?usp=sharing"
+          },
+          {
+            number: 4,                        
+            date: "2026-07-13",                
+            title: "Attribution Theory",
+            slide: "https://drive.google.com/file/d/1-LdLzi80dHdR3fZ57OfLtV_n2vX49Ygt/view?usp=sharing"
           }
         ] },
         { name: "Thermal Engineering", slug: "me111", code: "ME111", credit: 3.00, type: "theory", lectures: [
@@ -73,7 +79,7 @@ const SITE_DATA = {
         { name: "Calculus and Geometry", slug: "math131", code: "Math131", books: [
           {
             title: "Differencial Calculus",
-            author: "Muhammad and Bhattacharjee",
+            author: "Muhammad, Bhattacharjee and Latif",
             file: "https://drive.google.com/drive/folders/1xHBVRlYIgd6WB6sykM1uAdjDNgbZW1zx?usp=sharing",
             chapters: [
               { number: 1, title: "Introductory pages", file: "https://drive.google.com/file/d/1JV6RVhSSdWc22GfgN2MyUpbNmceuBEvA/view?usp=sharing" },
@@ -83,7 +89,11 @@ const SITE_DATA = {
               { number: 5, title: "Chapter 13-16", file: "https://drive.google.com/file/d/1FMuM6No6FI15w7o55EE3BHgQXXb8XQZI/view?usp=sharing" },
               { number: 6, title: "Questions", file: "https://drive.google.com/file/d/14v-eOwZRu6pBU0H_jqhNHDqi1qzbRDd-/view?usp=sharing" }
             ]
-          }
+          },
+          {
+            title: "Integral Calculus",
+            author: "Muhammad, Bhattacharjee and Latif",
+            file: "https://drive.google.com/file/d/1UdXQlGrGS31Hy2KuLXMewqHV5E52S2ZH/view?usp=sharing"}
         ] },
         { name: "Sociology and Industrial Psychology", slug: "hum131", code: "Hum131", books: [
           {
