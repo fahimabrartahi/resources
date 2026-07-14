@@ -83,7 +83,12 @@ const SITE_DATA = {
             ]
           }
         ] },
-        { name: "Chemistry", slug: "chem131", code: "Chem131", books: [] },
+        { name: "Chemistry", slug: "chem131", code: "Chem131", books: [
+          {
+            title: "Essentials of Physical Chemistry",
+            author: "Arun Bahl, B. S. Bahl and G. D. Tuli",
+            file: "https://drive.google.com/file/d/1U3QxFs_nlCos8w0zipsUHYVmlbNfYGh6/view?usp=sharing"}
+        ] },
         { name: "Calculus and Geometry", slug: "math131", code: "Math131", books: [
           {
             title: "Differencial Calculus",
