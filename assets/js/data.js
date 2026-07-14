@@ -74,7 +74,15 @@ const SITE_DATA = {
       term: "Term 1",
       termSlug: "term-1",
       courses: [
-        { name: "Physics-I", slug: "phy131", code: "Phy131", books: [] },
+        { name: "Physics-I", slug: "phy131", code: "Phy131", books: [
+          {
+            title: "Properties of Matter",
+            author: "Brijlal & Subramaniam",
+            chapters: [
+              { number: 8, title: "Surface tension", file: "https://drive.google.com/file/d/1AacgTUPeW7IeaK1gHULfbqrUB0FfoMZ2/view?usp=sharing" }
+            ]
+          }
+        ] },
         { name: "Chemistry", slug: "chem131", code: "Chem131", books: [] },
         { name: "Calculus and Geometry", slug: "math131", code: "Math131", books: [
           {
