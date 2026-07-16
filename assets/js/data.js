@@ -13,29 +13,9 @@ const SITE_DATA = {
             slide: "https://drive.google.com/file/d/1-gyM73By3wZ5PYuh_ysm5dnUP8dANuXo/view?usp=sharing"
           },
           {
-            number: 1,                        
-            date: "2026-07-05",                
-            title: "Introduction"
-          },
-          {
-            number: 2,                        
-            date: "2026-07-07",                
-            title: "Surface tension"
-          },
-          {
-            number: 3,                        
-            date: "2026-07-12",                
-            title: "Surface tension"
-          },
-          {
-            number: 4,                        
-            date: "2026-07-14",                
-            title: "Surface tension"
-          },
-          {
             number: 5,                        
             date: "2026-07-15",                
-            title: "Simple Harmonic Motion",
+            title: "Simple Harmonic Motion-SKR",
             slide: "https://drive.google.com/file/d/1jos6jmcylTZVg85j9nd95He8t26ED--E/view?usp=sharing"
           }
         ] },
