@@ -68,9 +68,9 @@ function renderHome() {
   setBreadcrumb([{ label: "Home" }]);
   root.innerHTML = `
     <section class="hero">
-      <p class="hero-eyebrow">Class Resource Catalog</p>
-      <h1 class="hero-title">Find any lecture or textbook in three clicks.</h1>
-      <p class="hero-lede">Everything the class has shared — organized by term and course — kept in one place so no one has to dig through chat threads again.</p>
+      <p class="hero-eyebrow">Class Resource</p>
+      <h1 class="hero-title">Find any lecture or textbook easily.</h1>
+      <p class="hero-lede">Everything the class has shared — organized by term and course — kept in one place so no one has to dig through chats again.</p>
     </section>
     <div class="tile-grid tile-grid--main">
       ${card("#/lectures", "Lecture Sheets", "Slides & notes, by term and course", "lecture")}
