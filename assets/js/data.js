@@ -14,9 +14,29 @@ const SITE_DATA = {
           },
           {
             number: 1,                        
-            date: "2026-07-06",                
-            title: "Introduction",
-            slide: ""
+            date: "2026-07-05",                
+            title: "Introduction"
+          },
+          {
+            number: 2,                        
+            date: "2026-07-07",                
+            title: "Surface tension"
+          },
+          {
+            number: 3,                        
+            date: "2026-07-12",                
+            title: "Surface tension"
+          },
+          {
+            number: 4,                        
+            date: "2026-07-14",                
+            title: "Surface tension"
+          },
+          {
+            number: 5,                        
+            date: "2026-07-15",                
+            title: "Simple Harmonic Motion",
+            slide: "https://drive.google.com/file/d/1jos6jmcylTZVg85j9nd95He8t26ED--E/view?usp=sharing"
           }
         ] },
         { name: "Chemistry", slug: "chem131", code: "Chem131", credit: 3.00, type: "theory", lectures: [] },
