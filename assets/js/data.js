@@ -123,7 +123,14 @@ const SITE_DATA = {
         { name: "Thermal Engineering", slug: "me111", code: "ME111", books: [] },
         { name: "Chemistry Sessional", slug: "chem132", code: "Chem132", books: [] },
         { name: "Thermal Engineering Sessional", slug: "me112", code: "ME112", books: [] },
-        { name: "Welding and Foundry", slug: "me152", code: "ME152", books: [] },
+        { name: "Welding and Foundry", slug: "me152", code: "ME152", books: [
+          {
+            title: "FOUNDRY LAB SHEET",
+            file: "https://drive.google.com/file/d/1o1aD67CzLvNc3kjY75DiuJ4uLibYe7md/view?usp=sharing"},
+          {
+            title: "Experiment Sheet Foundry",
+            file: "https://drive.google.com/file/d/1LSJloZfmUSMroT7H5_FTPkd1imCyM4kI/view?usp=sharing"}
+        ] },
         { name: "Mechanical Drawing and AutoCAD", slug: "me172", code: "ME172", books: [
           {
             title: "Mechanical Engineering Drawing",
