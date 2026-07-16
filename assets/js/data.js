@@ -81,6 +81,11 @@ const SITE_DATA = {
             chapters: [
               { number: 8, title: "Surface tension", file: "https://drive.google.com/file/d/1AacgTUPeW7IeaK1gHULfbqrUB0FfoMZ2/view?usp=sharing" }
             ]
+          },
+          {
+            title: "Physics for engineers part-1",
+            author: "DR. Gias Uddin Ahmad",
+            file: "https://drive.google.com/file/d/1yL9Vf006Icsi99yZ-DtbeuXnR5B-1yZq/view?usp=sharing"
           }
         ] },
         { name: "Chemistry", slug: "chem131", code: "Chem131", books: [
