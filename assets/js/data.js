@@ -45,6 +45,12 @@ const SITE_DATA = {
             date: "2026-07-13",                
             title: "Attribution Theory",
             slide: "https://drive.google.com/file/d/1-LdLzi80dHdR3fZ57OfLtV_n2vX49Ygt/view?usp=sharing"
+          },
+          {
+            number: 5,                        
+            date: "2026-07-19",                
+            title: "Motivation",
+            slide: "https://drive.google.com/file/d/16u-Cx8Ce7GGuyXjc7PKZb8XLjZYT_-ix/view?usp=sharing"
           }
         ] },
         { name: "Thermal Engineering", slug: "me111", code: "ME111", credit: 3.00, type: "theory", lectures: [
